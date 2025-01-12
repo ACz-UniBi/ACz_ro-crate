@@ -107,8 +107,7 @@ An [Organization] SHOULD be the value for the [publisher] property of a [Dataset
   "@id": "./",
   "...": "...",
   "publisher": {"@id": "https://ror.org/03f0f6041"}
-}
-
+},
 {
   "@id": "https://ror.org/03f0f6041",
   "@type": "Organization",
@@ -262,8 +261,6 @@ A [data entity](data-entities) MAY provide a published DOI [identifier] that pri
   "name": "An XXL-CT-scan of an XXL Tyrannosaurus rex skull. 19th World Conference on Non-Destructive Testing (WCNDT 2016)",
   "creditText": "Reims, N., Schulp, A., Böhnel, M., & Larson, P. (2016). An XXL-CT-scan of an XXL Tyrannosaurus rex skull. 19th World Conference on Non-Destructive Testing (WCNDT 2016), 13-17 June 2016 in Munich, Germany. e-Journal of Nondestructive Testing Vol. 21(7). https://www.ndt.net/?id=19249"
 }
-
-
 ```
 
 
@@ -282,13 +279,12 @@ The [Root Data Entity](root-data-entity) SHOULD have a [publisher] property. Thi
   },
   "temporalCoverage": "2017"
 },
-
 {
   "@id": "https://ror.org/03f0f6041",
   "@type": "Organization",
   "identifier": "https://ror.org/03f0f6041",
   "name": "University of Technology Sydney"
-},
+}
 ```
 
 
@@ -308,7 +304,7 @@ To associate a research project with a [Dataset], the _RO-Crate JSON-LD_ SHOULD 
   "@type": "Dataset",
   "funder": {
     "@id": "https://ror.org/038sjwq14"
-  },
+  }
 },
 {
   "@id": "https://eresearch.uts.edu.au/projects/provisioner",
@@ -337,7 +333,7 @@ To associate a research project with a [Dataset], the _RO-Crate JSON-LD_ SHOULD 
   "description": "The core purpose of the Australian National Data Service (ANDS) is ...",
   "identifier": "https://ands.org.au",
   "name": "Australian National Data Service"
-},
+}
 ```
 
 
@@ -367,21 +363,18 @@ The below _Data Entity_ has a [copyrightHolder] which is different from its [aut
   },
   "sameAs": "https://www.scidatacon.org/2016/sessions/56/paper/265/"
 },
-
 {
   "@id": "https://creativecommons.org/licenses/by/4.0/",
   "@type": "CreativeWork",
   "name": "CC BY 4.0",
   "description": "Creative Commons Attribution 4.0 International License"
 },
-
 {
   "@id": "https://orcid.org/0000-0002-0068-716X",
   "@type": "Person",
   "identifier": "https://orcid.org/0000-0002-0068-716X",
   "name": "Cameron Neylon"
 },
-
 {
   "@id": "https://www.idrc.ca/",
   "@type": "Organization",
@@ -410,7 +403,6 @@ To express the metadata license is different from the _Root Data Entity_, expand
     "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
   }
 },
-
 {
   "@id": "./",
   "@type": "Dataset",
@@ -419,7 +411,6 @@ To express the metadata license is different from the _Root Data Entity_, expand
     "@id": "https://creativecommons.org/licenses/by/4.0/"
   }
 }
-
 ```
 
 If no explicit `license` is expressed on the _RO-Crate Metadata Descriptor_, the `license` expressed on the _Root Data Entity_ applies also on the RO-Crate metadata.
@@ -447,7 +438,7 @@ To include EXIF, or other data which can be encoded as property/value pairs, add
         },
         {
           "@id": "#c2521494-9b94-4b23-a713-6b281f540823"
-        },
+        }
       ]
 },
 {
@@ -455,7 +446,7 @@ To include EXIF, or other data which can be encoded as property/value pairs, add
       "@type": "PropertyValue",
       "name": "InternalSerialNumber",
       "value": "4102011002108002"
-},
+}
 ```
 
 
@@ -478,7 +469,7 @@ This example shows how to define a place, using a [geonames] ID:
     "@id": "https://orcid.org/0000-0002-3545-944X"
   },
   "contentLocation": {
-    "@id": "http://sws.geonames.org/8152662/",
+    "@id": "http://sws.geonames.org/8152662/"
   }
 },
 {
@@ -519,7 +510,7 @@ Keyword properties MUST use [keywords]. Note that by Schema.org convention, keyw
 ```json
 {
   "keywords": "Gibraltar, Spain, British Overseas Territory, city, map",
-  "about": { "@id": "http://dbpedia.org/resource/Gibraltar" },
+  "about": { "@id": "http://dbpedia.org/resource/Gibraltar" }
 }
 ```
 
